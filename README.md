@@ -6,3 +6,9 @@ Install the following packages -
 pip install keras-unet-collection
 pip install jenti
 ```
+To install in Colab - 
+```
+!pip install --target='/content/drive/MyDrive/library' keras-unet-collection
+!pip install --target='/content/drive/MyDrive/library' jenti
+```
+You can set your own target location. 
