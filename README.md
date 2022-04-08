@@ -11,8 +11,8 @@ To install in Colab -
 !pip install --target='/content/drive/MyDrive/library' keras-unet-collection
 !pip install --target='/content/drive/MyDrive/library' jenti
 ```
-You can set your own target location. 
-
+You can set your own target location. <br>
+During inference, the package jenti is used to create patches. More details of it can be found [here](https://github.com/mrinal054/patch_and_merge).
 
 ### Reference:
 Sha, Y. Keras-unet-collection. GitHub repository (2021) doi:10.5281/zenodo.5449801.
