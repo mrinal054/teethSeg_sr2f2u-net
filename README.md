@@ -1,5 +1,7 @@
 # S-R2F2U-Net: A single-stage model for teeth segmentation
-This implementation is leveraged from [Yingkai Sha’s](https://github.com/yingkaisha/keras-unet-collection) repository. Base models for recurrent, residual and attention are taken from the above mentioned repository. <br>
+This implementation is leveraged from [Yingkai Sha’s](https://github.com/yingkaisha/keras-unet-collection) repository. Base models for recurrent, residual and attention are taken from the above mentioned repository. <br><br>
+
+The original paper can be found [here](https://arxiv.org/abs/2204.02939). <br><br>
 
 Install the following packages - 
 ```
