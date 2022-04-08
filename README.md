@@ -12,3 +12,7 @@ To install in Colab -
 !pip install --target='/content/drive/MyDrive/library' jenti
 ```
 You can set your own target location. 
+
+
+### Reference:
+Sha, Y. Keras-unet-collection. GitHub repository (2021) doi:10.5281/zenodo.5449801.
