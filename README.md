@@ -16,5 +16,7 @@ To install in Colab -
 You can set your own target location. <br><br>
 During the test phase, the package jenti is used to create patches. More details of it can be found [here](https://github.com/mrinal054/patch_and_merge).
 
+``` Description not complete yet```
+
 ### Reference:
 Sha, Y. Keras-unet-collection. GitHub repository (2021) doi:10.5281/zenodo.5449801.
