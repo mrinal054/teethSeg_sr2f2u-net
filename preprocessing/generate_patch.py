@@ -60,5 +60,7 @@ create_patch(base_loc, base_patch_dir, patch_size, overlap, mode='train', names=
 # Create validation patch 
 create_patch(base_loc, base_patch_dir, patch_size, overlap, mode='val', names=names_val, csv_output=False)
 
-# Create test patch
-create_patch(base_loc, base_patch_dir, patch_size, overlap, mode='test', names=names_test, csv_output=True)
+# Uncomment to create test patch. In this project, test patches were not created beforehand. Instead, they were
+# created during the test phase to save memory. 
+
+# create_patch(base_loc, base_patch_dir, patch_size, overlap, mode='test', names=names_test, csv_output=True)
