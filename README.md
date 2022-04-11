@@ -36,8 +36,8 @@ list_IDs_val = os.listdir(img_dir_val) # list of validation image names
 
 # Call DataGenerator
 train_gen = DataGenerator(list_IDs=list_IDs_train,
-                          dir_image=img_dir_train,
-                          dir_mask=mask_dir_train,
+                          dir_image=img_dir_train, # directory of images
+                          dir_mask=mask_dir_train, # directory of masks or ground truth
                           n_channels_image=3,
                           n_channels_mask=1,
                           dim=(512,512),
