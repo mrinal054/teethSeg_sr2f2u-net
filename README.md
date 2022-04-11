@@ -23,7 +23,7 @@ During the test phase, the package jenti is used to create patches. More details
 
 Class `DataGenerator`
 ----------------------------
-It loads data batch-wise from a given directory. <br>
+This class is used in both `Colab_hybrid_unet_2d.ipynb` and `Colab_hybrid_unet_2d_3d.ipynb`. It loads data batch-wise from a given directory. <br>
 
 Loading the entire training and validation dataset is memory expensive for Colab. Instead, a data loader class called `DataGenerator` is implemented that loads images on-the-fly. In other words, it takes a list of image names and the directory where the images are situated. Then it loads images batch-wise while training the model. <br>
 
