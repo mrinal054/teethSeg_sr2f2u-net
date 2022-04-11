@@ -16,6 +16,11 @@ To install in Colab -
 You can set your own target location. <br><br>
 During the test phase, the package jenti is used to create patches. More details of it can be found [here](https://github.com/mrinal054/patch_and_merge).
 
+## Implementation details
+* How to create patches is described in the folder `preprocessing`
+* 2D models are described in `Colab_hybrid_unet_2d.ipynb`. In the paper, this code is used for implementation and evaluation. 
+* Both 2D and 3D models are described in `Colab_hybrid_unet_2d_3d.ipynb`.
+
 ## Description not complete yet
 
 ### Reference:
