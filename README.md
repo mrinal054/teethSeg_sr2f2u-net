@@ -21,6 +21,9 @@ During the test phase, the package jenti is used to create patches. More details
 * 2D models are described in `Colab_hybrid_unet_2d.ipynb`. In the paper, this code is used for implementation and evaluation. 
 * Both 2D and 3D models are described in `Colab_hybrid_unet_2d_3d.ipynb`.
 
+Class `DataGenerator`
+----------------------------
+
 `Colab_hybrid_unet_2d.ipynb`
 ----------------------------
 
