@@ -23,6 +23,37 @@ During the test phase, the package jenti is used to create patches. More details
 
 Class `DataGenerator`
 ----------------------------
+It loads data batch-wise from a given directory. <br>
+
+Loading the entire training and validation dataset is memory expensive for Colab. Instead, a data loader class called `DataGenerator` is implemented that loads images on-the-fly. In other words, it takes a list of image names and the directory where the images are situated. Then it loads images batch-wise while training the model. <br>
+
+Reference: [Click here](https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly) <br>
+
+Here is an example of how to use it - 
+```
+list_IDs_train = os.listdir(img_dir_train) # list of training image names 
+list_IDs_val = os.listdir(img_dir_val) # list of validation image names
+
+# Call DataGenerator
+train_gen = DataGenerator(list_IDs=list_IDs_train,
+                          dir_image=img_dir_train,
+                          dir_mask=mask_dir_train,
+                          n_channels_image=3,
+                          n_channels_mask=1,
+                          dim=(512,512),
+                          batch_size=batch_size,
+                          shuffle=True)
+
+val_gen = DataGenerator(list_IDs=list_IDs_val,
+                          dir_image=img_dir_val,
+                          dir_mask=mask_dir_val,
+                          n_channels_image=3,
+                          n_channels_mask=1,
+                          dim=(512,512),
+                          batch_size=batch_size,
+                          shuffle=True)
+```
+
 
 `Colab_hybrid_unet_2d.ipynb`
 ----------------------------
