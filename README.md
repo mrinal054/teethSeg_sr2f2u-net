@@ -67,7 +67,7 @@ Here are some network models shown in the paper - <br>
  | ------ | ------   | --------   | --------   | -------------   | -------   |
 
 | First Header   ad | Second Header |
-| ------------- | ------------- |
+| ------------- | -------------   |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
