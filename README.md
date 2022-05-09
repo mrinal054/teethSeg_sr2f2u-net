@@ -73,9 +73,9 @@ Here are some network models shown in the paper - <br>
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-| Models | Residual | 
-| --- | --- |
-| a | bb | 
+| Models | Residual | Recurrent1 |
+| :---: | :---: |  :---: |
+| a | bb |  cc |
 
 ## Description not complete yet
 
