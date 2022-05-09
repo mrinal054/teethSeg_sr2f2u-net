@@ -57,11 +57,14 @@ val_gen = DataGenerator(list_IDs=list_IDs_val,
 
 `Colab_hybrid_unet_2d.ipynb`
 ----------------------------
-It can create a model from any combination of the following four parameters - <br>
+It can create models from any combination of the following four parameters - <br>
 * Residual
 * Recurrent
 * Attention
-* Filter doubling
+* Filter doubling <br>
+Here are some network models shown in the paper - 
+|Models|Residual|Recurrent1|Recurrent2|Filter doubling|Attention|
+|:----:|:------:|:--------:|:--------:|:-------------:|:-------:|
 
 
 
