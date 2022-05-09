@@ -57,13 +57,12 @@ val_gen = DataGenerator(list_IDs=list_IDs_val,
 
 `Colab_hybrid_unet_2d.ipynb`
 ----------------------------
-It can create models from any combination of the following four parameters - <br>
+It can create models from any combination of following four parameters - <br>
 * Residual
 * Recurrent
 * Attention
-* Filter doubling <br>
-Here are some network models shown in the paper - <br><br>
-
+* Filter doubling <br><br>
+Here are some network models shown in the paper - <br>
 
 
 | Models | Residual | Recurrent1 | Recurrent2 | Filter doubliing | Attention |
@@ -73,6 +72,50 @@ Here are some network models shown in the paper - <br><br>
 | S-R2U-Net | &check; |  &cross; | &check; | &cross; | &cross; |
 | S-R2F2U-Net | &check; |  &cross; | &check; | &check; | &check; |
 | S-R2F2-Attn-U-Net | &check; |  &cross; | &check; | &check; | &check; |
+
+Following is a example of how to use `Colab_hybrid_unet_2d.ipynb`.
+
+```
+# Hyper-parameters
+IMG_HEIGHT = 512 #img_train.shape[1]
+IMG_WIDTH  = 512 #img_train.shape[2]
+IMG_CHANNELS = 3 #img_train.shape[3]
+NUM_LABELS = 2  #Binary
+input_shape = (IMG_HEIGHT,IMG_WIDTH,IMG_CHANNELS)
+batch_size = 2
+FILTER_NUM = [32, 64, 128, 256, 512]
+STACK_NUM_DOWN = 2
+STACK_NUM_UP = 2
+DILATION_RATE = 1
+FILTER_DOUBLE = True
+RECUR_STATUS = (False, True)
+RECUR_NUM = 2
+IS_RESIDUAL = True
+IS_ATTENTION = True
+ATTENTION_ACTIVATION = 'ReLU'
+ATTENTION = 'add'
+ACTIVATION = 'ReLU'
+OUTPUT_ACTIVATION = 'Softmax'
+BATCH_NORM = True
+POOL = False
+UNPOOL = False
+RETRAIN = False
+
+
+# Current version works for "stack_num_down = stack_num_up" only
+model = hybrid_unet_2d(input_shape, filter_num=FILTER_NUM, 
+                       n_labels=NUM_LABELS, 
+                       stack_num_down=STACK_NUM_DOWN, stack_num_up=STACK_NUM_UP, 
+                       dilation_rate=DILATION_RATE,
+                       filter_double=FILTER_DOUBLE,
+                       recur_status=RECUR_STATUS, recur_num=RECUR_NUM,
+                       is_residual=IS_RESIDUAL,
+                       is_attention=IS_ATTENTION,
+                       atten_activation=ATTENTION_ACTIVATION, attention=ATTENTION,
+                       activation=ACTIVATION, output_activation=OUTPUT_ACTIVATION, 
+                       batch_norm=BATCH_NORM, pool=POOL, unpool=UNPOOL, name='hybrid_unet')
+```
+
 
 ## Description not complete yet
 
