@@ -65,7 +65,7 @@ It can create models from any combination of following four parameters - <br>
 Here are some network models shown in the paper - <br>
 
 
-| Configuration\Attribute | Residual | Recurrent1 | Recurrent2 | Filter doubliing | Attention |
+| Models | Residual | Recurrent1 | Recurrent2 | Filter doubliing | Attention |
 | :---: | :---: |  :---: |  :---: |  :---: |  :---: |
 | Attention U-Net | &cross; |  &cross; | &cross; | &cross; | &check; |
 | R2U-Net | &check; |  &check; | &check; | &cross; | &cross; |
@@ -116,6 +116,9 @@ model = hybrid_unet_2d(input_shape, filter_num=FILTER_NUM,
                        batch_norm=BATCH_NORM, pool=POOL, unpool=UNPOOL, name='hybrid_unet')
 ```
 
+`Colab_hybrid_unet_2d_3d.ipynb`
+-------------------------------
+It can work for both 2d and 3d. A new parameter called `CONV` is used to define 2d or 3d model. For 2d model, set `CONV='2d`, and for 3d model, set `CONV='3d'`.
 
 ## Description not complete yet
 
