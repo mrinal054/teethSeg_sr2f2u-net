@@ -68,11 +68,11 @@ Here are some network models shown in the paper - <br><br>
 
 | Models | Residual | Recurrent1 | Recurrent2 | Filter doubliing | Attention |
 | :---: | :---: |  :---: |  :---: |  :---: |  :---: |
-| Attention U-Net | &cross; |  cc | d | e | &check; |
-| R2U-Net | bb |  cc | d | e | f |
-| S-R2U-Net | bb |  cc | d | e | f |
-| S-R2F2U-Net | bb |  cc | d | e | f |
-| S-R2F2-Attn-U-Net | bb |  cc | d | e | f |
+| Attention U-Net | &cross; |  &cross; | &cross; | &cross; | &check; |
+| R2U-Net | &check; |  &check; | &check; | &cross; | &cross; |
+| S-R2U-Net | &check; |  &cross; | &check; | &cross; | &cross; |
+| S-R2F2U-Net | &check; |  &cross; | &check; | &check; | &check; |
+| S-R2F2-Attn-U-Net | &check; |  &cross; | &check; | &check; | &check; |
 
 ## Description not complete yet
 
