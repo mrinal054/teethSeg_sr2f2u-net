@@ -121,8 +121,48 @@ model = hybrid_unet_2d(input_shape, filter_num=FILTER_NUM,
 -------------------------------
 It can work for both 2d and 3d. A new parameter called `CONV` is used to define 2d or 3d model. 
 * For 2d model, set `CONV='2d'`
-* For 3d model, set `CONV='3d'`.
+* For 3d model, set `CONV='3d'`
 
+`Colab_hybrid_layer_output.ipynb`
+---------------------------------
+It demonstrates layers' outputs during the decoding process. For better visualization, all the feature maps are resize to the original image size. It can generate layer outputs in two ways - 
+* Create model using layer names, and then generate layer outputs
+* Create model using layer index, and then generate layer outputs
+
+Here is an example of creating model using layer names - 
+
+```from keras.models import load_model
+
+# Load an existing model
+existing_model = load_model('/content/drive/MyDrive/panoramicDentalSegmentation/checkpoints/hybrid_unet_2d/recur_F_T_residual_filter_double/2022-02-24_06-24-34/cp-0025.ckpt', compile=False)```
+
+# Get the desired layer names from the model summary
+existing_model.summary()
+
+# Layer names
+input_layer_name = 'hybrid_unet_input'
+output_layer_name1 = 'hybrid_unet_up1_add1'
+output_layer_name2 = 'hybrid_unet_up2_add1'
+output_layer_name3 = 'hybrid_unet_up3_add1'
+output_layer_name4 = 'hybrid_unet_up4_add1'
+output_layer_name5 = 'hybrid_unet_output_activation'
+
+# Method 1: Previous-model input is taken as the input
+model1 = Model(inputs=existing_model.input, outputs=existing_model.get_layer(output_layer_name1).output)
+model2 = Model(inputs=existing_model.input, outputs=existing_model.get_layer(output_layer_name2).output)
+model3 = Model(inputs=existing_model.input, outputs=existing_model.get_layer(output_layer_name3).output)
+model4 = Model(inputs=existing_model.input, outputs=existing_model.get_layer(output_layer_name4).output)
+model5 = Model(inputs=existing_model.input, outputs=existing_model.get_layer(output_layer_name5).output)
+
+models = [model1, model2, model3, model4, model5]
+```
+Here is an example of how to create a model from layer indices - 
+```
+layers = {i: v for i, v in enumerate(existing_model.layers)}
+
+# Method 1
+model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(index=100).output)
+```
 ## Description not complete yet
 
 ### Reference:
