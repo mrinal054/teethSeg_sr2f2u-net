@@ -53,7 +53,7 @@ val_gen = DataGenerator(list_IDs=list_IDs_val,
                           batch_size=batch_size,
                           shuffle=True)
 ```
-
+**Note: An augmentation-enabled DataGenerator is also available upon request. Currently, it supports rotation, flip and shift. To get it, email at mdhar@uwm.edu with the subject line 'Requesting for augmentation-enabled DataGenerator'.**
 
 `Colab_hybrid_unet_2d.ipynb`
 ----------------------------
