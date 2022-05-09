@@ -23,7 +23,7 @@ During the test phase, the package jenti is used to create patches. More details
 
 Class `DataGenerator`
 ----------------------------
-**Note: An augmentation-enabled DataGenerator is also available upon request. Currently, it supports rotation, flip and shift. To get it, email at mdhar@uwm.edu with the subject line '*Requesting for augmentation-enabled DataGenerator*'.**
+**[Note: An augmentation-enabled DataGenerator is also available upon request. Currently, it supports rotation, flip and shift. To get it, email at mdhar@uwm.edu with the subject line '*Requesting for augmentation-enabled DataGenerator*'.]**
 
 This class is used in both `Colab_hybrid_unet_2d.ipynb` and `Colab_hybrid_unet_2d_3d.ipynb`. It loads data batch-wise from a given directory. <br>
 
