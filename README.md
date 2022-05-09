@@ -62,7 +62,7 @@ It can create models from any combination of the following four parameters - <br
 * Recurrent
 * Attention
 * Filter doubling <br>
-Here are some network models shown in the paper - 
+Here are some network models shown in the paper - <br>
 |Models|Residual|Recurrent1|Recurrent2|Filter doubling|Attention|
 |:----:|:------:|:--------:|:--------:|:-------------:|:-------:|
 
