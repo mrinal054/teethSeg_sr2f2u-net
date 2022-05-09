@@ -65,7 +65,7 @@ It can create models from any combination of following four parameters - <br>
 Here are some network models shown in the paper - <br>
 
 
-| Models | Residual | Recurrent1 | Recurrent2 | Filter doubliing | Attention |
+| Configuration\Attribute | Residual | Recurrent1 | Recurrent2 | Filter doubliing | Attention |
 | :---: | :---: |  :---: |  :---: |  :---: |  :---: |
 | Attention U-Net | &cross; |  &cross; | &cross; | &cross; | &check; |
 | R2U-Net | &check; |  &check; | &check; | &cross; | &cross; |
