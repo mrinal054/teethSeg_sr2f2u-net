@@ -23,6 +23,8 @@ During the test phase, the package jenti is used to create patches. More details
 
 Class `DataGenerator`
 ----------------------------
+**Note: An augmentation-enabled DataGenerator is also available upon request. Currently, it supports rotation, flip and shift. To get it, email at mdhar@uwm.edu with the subject line '*Requesting for augmentation-enabled DataGenerator*'.**
+
 This class is used in both `Colab_hybrid_unet_2d.ipynb` and `Colab_hybrid_unet_2d_3d.ipynb`. It loads data batch-wise from a given directory. <br>
 
 Loading the entire training and validation dataset is memory expensive for Colab. Instead, a data loader class called `DataGenerator` is implemented that loads images on-the-fly. In other words, it takes a list of image names and the directory where the images are situated. Then it loads images batch-wise while training the model. <br>
@@ -53,7 +55,6 @@ val_gen = DataGenerator(list_IDs=list_IDs_val,
                           batch_size=batch_size,
                           shuffle=True)
 ```
-**Note: An augmentation-enabled DataGenerator is also available upon request. Currently, it supports rotation, flip and shift. To get it, email at mdhar@uwm.edu with the subject line 'Requesting for augmentation-enabled DataGenerator'.**
 
 `Colab_hybrid_unet_2d.ipynb`
 ----------------------------
