@@ -118,7 +118,7 @@ model = hybrid_unet_2d(input_shape, filter_num=FILTER_NUM,
 
 `Colab_hybrid_unet_2d_3d.ipynb`
 -------------------------------
-It can work for both 2d and 3d. A new parameter called `CONV` is used to define 2d or 3d model. For 2d model, set `CONV='2d`, and for 3d model, set `CONV='3d'`.
+It can work for both 2d and 3d. A new parameter called `CONV` is used to define 2d or 3d model. For 2d model, set `CONV='2d'`, and for 3d model, set `CONV='3d'`.
 
 ## Description not complete yet
 
