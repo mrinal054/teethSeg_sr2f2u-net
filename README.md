@@ -63,15 +63,8 @@ It can create models from any combination of the following four parameters - <br
 * Attention
 * Filter doubling <br>
 Here are some network models shown in the paper - <br>
-| Models | Residual | Recurrent1 | Recurrent2 | Filter doubling | Attention |
-| ------ | ------   | ------   | ------   | ------   | ------   |
-| a      | b        | c          | d          | 3               | f         |  
- 
 
-| First Header   ad | Second Header |
-| ---------------- | -------------   |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+
 
 | Models | Residual | Recurrent1 |
 | :---: | :---: |  :---: |
