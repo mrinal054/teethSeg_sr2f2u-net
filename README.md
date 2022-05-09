@@ -77,9 +77,9 @@ Following is a example of how to use `Colab_hybrid_unet_2d.ipynb`.
 
 ```
 # Hyper-parameters
-IMG_HEIGHT = 512 #img_train.shape[1]
-IMG_WIDTH  = 512 #img_train.shape[2]
-IMG_CHANNELS = 3 #img_train.shape[3]
+IMG_HEIGHT = 512 
+IMG_WIDTH  = 512 
+IMG_CHANNELS = 3 
 NUM_LABELS = 2  #Binary
 input_shape = (IMG_HEIGHT,IMG_WIDTH,IMG_CHANNELS)
 batch_size = 2
