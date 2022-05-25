@@ -163,6 +163,12 @@ layers = {i: v for i, v in enumerate(existing_model.layers)}
 # Method 1
 model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(index=100).output)
 ```
+## Performance analysis table
+
+| Model | Acc | Spec. | Pre. | Recall | Dice | Param (M)|
+| :---: | :---: |  :---: |  :---: |  :---: |  :---: |  :---: |
+| Attention U-Net | 97.06 | 98.60 | 94.28 | 91.22 | 92.55 | 43.94 |
+
 ## Description not complete yet
 
 ### Reference:
