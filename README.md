@@ -168,7 +168,7 @@ model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(inde
 | Model | Acc | Spec. | Pre. | Recall | Dice | Param (M)|
 | :---: | :---: |  :---: |  :---: |  :---: |  :---: |  :---: |
 | Attention U-Net | 97.06 | 98.60 | 94.28 | 91.22 | 92.55 | 43.94 |
-| U2 NET | 96.82 | **98.84** | **95.12** | 89.01 | 91.78 | 60.11 |
+| U<sup>2</sup> NET | 96.82 | **98.84** | **95.12** | 89.01 | 91.78 | 60.11 |
 | R2U-NET (up to 4 levels) | 97.27 | 98.66 | 94.61 | 92.02 | 93.11 | 108.61 |
 | ResUNET-a | 97.10 | 98.50 | 93.95 | 91.77 | 92.66 | 4.71 |
 | U-Net | 96.04 | 97.68 | 89.89 | 90.18 | 89.33 | 31.04 |
