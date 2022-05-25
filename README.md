@@ -171,6 +171,10 @@ model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(inde
 | U2 NET | 96.82 | 98.84 | 95.12 | 89.01 | 91.78 | 60.11 |
 | R2U-NET (up to 4 levels) | 97.27 | 98.66 | 94.61 | 92.02 | 93.11 | 108.61 |
 | ResUNET-a | 97.10 | 98.50 | 93.95 | 91.77 | 92.66 | 4.71 |
+| U-Net | 96.04 | 97.68 | 89.89 | 90.18 | 89.33 | 31.04 |
+| BiseNet | 95.05 | 95.98 | 85.53 | 92.48 | 87.8 | 12.2 |
+| DenseASPP | 95.5 | 97.76 | 90.09 | 86.88 | 88.13 | 46.16 |
+
 
 
 ## Description not complete yet
