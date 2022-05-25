@@ -168,7 +168,7 @@ model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(inde
 | Model | Acc | Spec. | Pre. | Recall | Dice | Param (M)|
 | :---: | :---: |  :---: |  :---: |  :---: |  :---: |  :---: |
 | Attention U-Net | 97.06 | 98.60 | 94.28 | 91.22 | 92.55 | 43.94 |
-| U2 NET | 96.82 | 98.84 | 95.12 | 89.01 | 91.78 | 60.11 |
+| U2 NET | 96.82 | **98.84** | 95.12 | 89.01 | 91.78 | 60.11 |
 | R2U-NET (up to 4 levels) | 97.27 | 98.66 | 94.61 | 92.02 | 93.11 | 108.61 |
 | ResUNET-a | 97.10 | 98.50 | 93.95 | 91.77 | 92.66 | 4.71 |
 | U-Net | 96.04 | 97.68 | 89.89 | 90.18 | 89.33 | 31.04 |
@@ -179,7 +179,9 @@ model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(inde
 |TSASNet | 96.94 | 97.81 | 94.77 | 93.77 | 92.72 | 78.27 |
 |MSLPNet | 97.30 | 98.45 | 93.35 | 92.97 | 93.01 | - |
 | LTPEDN | 94.32 | - | - | - | 92.42 | - |
-
+| S-R2U-Net | 97.22 | 98.52 | 94.06 | 92.33 | 93.01 | 77.17 |
+| S-R2F2U-Net | 97.31 | 98.55 | 94.27 | 92.61 | 93.26 | 59.12 |
+| S-R2F2-Attn-U-Net | 97.23 | 98.55 | 94.19 | 92.16 | 93.00 | 59.25 |
 
 
 ## Description not complete yet
