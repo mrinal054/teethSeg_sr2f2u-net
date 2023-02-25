@@ -184,7 +184,6 @@ model = Model(inputs=existing_model.input, outputs=existing_model.get_layer(inde
 | S-R2F2-Attn-U-Net | 97.23 | 98.55 | 94.19 | 92.16 | 93.00 | 59.25 |
 
 
-## Description not complete yet
 
 ### Reference:
 Sha, Y. Keras-unet-collection. GitHub repository (2021) doi:10.5281/zenodo.5449801.
